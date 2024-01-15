@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff List</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pages/dashboard.css">
+    <link rel="stylesheet" href="/css/pages/staffList.css">
+</head>
+
+<body>
+    <section class="main">
+        <section class="sidemenu">
+
+            <div class="sidemenu-title">
+                <img src="/image/sideMenu1.png" alt="">
+                <b>FURNITURE</b>
+                <img src="/image/sideMenu2.png" alt="">
+            </div>
+            <div class="sidemenu-container">
+                <div class="sidemenu-item">
+                    <img src="/image/products.png" alt="">
+                    <p>Products</p>
+                </div>
+                <div class="sidemenu-item">
+                    <img src="/image/customer.png" alt="">
+                    <p>Customers</p>
+                </div>
+                <div class="sidemenu-item">
+                    <img src="/image/order.png" alt="">
+                    <p>Orders</p>
+                </div>
+                <div class="sidemenu-item">
+                    <img src="/image/staff.png" alt="">
+                    <p>Staff List</p>
+                </div>
+                <div class="sidemenu-item">
+                    <img src="/image/report.png" alt="">
+                    <p>Reports</p>
+                </div>
+
+            </div>
+            <div class="sidemenu-container">
+                <div class="sidemenu-item">
+                    <img src="/image/setting.png" alt="">
+                    <p>Settings</p>
+                </div>
+                <div class="sidemenu-item">
+                    <img src="/image/logout.png" alt="">
+                    <p>Logout</p>
+                </div>
+
+
+            </div>
+
+        </section>
+        <div class="right">
+            <section class="topnav">
+                <b>Staff Management</b>
+                <div class="rightnav">
+                    <img src="/image/noti.png" alt="">
+                    <img src="/image/admin.png" alt="">
+                </div>
+            </section>
+            <div class="top-div">
+                <div class="date">
+                    <p>01/01/2023 - 01/01/2023</p>
+                    <img src="/image/calendar.png" alt="">
+                </div>
+                <div class="filter">
+                    <div class="search">
+                        <p>Search...</p>
+                        <p><img src="/image/search.png" alt=""></p>
+                    </div>
+                    <div class="sort">
+                        <select id="sort">
+                            <option value="">Deafult Sorting</option>
+                            <option value="A">A-Z</option>
+                            <option value="A">A-Z</option>
+                            <option value="A">A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="staffList">
+                <div class="staffListTitle">
+                    <p>Staff List</p>
+                    <button>
+                        <img src="/image/+.svg" alt="">
+                        <p>New Staff</p>
+                    </button>
+                </div>
+                <div class="staffListTable">
+                    <div class="row staffListHeader">
+                        <div><input type="checkbox"></div>
+                        <div>Staff ID</div>
+                        <div>Staff Name</div>
+                        <div>Address</div>
+                        <div>Email</div>
+                        <div>Roles(s)</div>
+                        <div>Status</div>
+                        <div>Action</div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div> <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Super Admin</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="active">Active</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div>
+                        <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Product Manager</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="inactive">Inactive</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div>
+                        <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Order Manager</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="suspended">Suspended</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div>
+                        <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Customer Support</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="active">Active</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div>
+                        <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Marketing Manager</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="active">Active</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div>
+                        <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Super Admin</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="active">Active</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div><input type="checkbox"></div>
+                        <div>HFJ7784872</div>
+                        <div>Leronado Luris</div>
+                        <div>331 Wright Court</div>
+                        <div>leronado@gmail.com</div>
+                        <div>
+                            <select id="role" class="role">
+                                <option value="">Super Admin</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                                <option value="A">A-Z</option>
+                            </select>
+                        </div>
+                        <div class="active">Active</div>
+                        <div>
+                            <img src="/image/edit.svg" alt="">
+                            <img src="/image/trashbin.svg" alt="">
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="pagination">
+                    <a href="#"> < </a>
+                    <a href="#">1</a>
+                    <a href="#" class="pagination_active">2</a>
+                    <a href="#">></a>
+                </div>
+            </div>
+        
+        </div>
+
+    </section>
+
+</body>
+
+</html>
