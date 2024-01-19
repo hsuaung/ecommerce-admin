@@ -23,23 +23,24 @@
 }
 .staffList{
     background-color:#2E2E48 ;
-    /* background-color: red; */
     padding:2rem;
     border-radius: 5px;
-    margin-bottom: 2rem;;
+    
 }
 .staffListTitle {
     display:flex;
     justify-content: space-between;
 }
-.staffListTitle button{
+.staffListTitle a{
     background-color: #475BE8;
     color:#FFFFFF;
+    text-decoration:none;
     display:flex;
     padding:.6rem 1rem; 
     border: none;
-    width:8rem;
+    /* width:8rem; */
     border-radius: 5px;
+    gap:1rem;
     justify-content: space-around;
     
 }

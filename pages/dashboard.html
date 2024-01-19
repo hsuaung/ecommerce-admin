@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard  || admin</title>
+    <title>Furniture Store | Dashboard</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/pages/dashboard.css">
     <!-- chart.css cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="/css/pages/staffList.css">
+    <link rel="stylesheet" href="/css/pages/orderList.css">
+
 
 </head>
 <body>
@@ -15,41 +18,55 @@
     <section class="sidemenu">
      
         <div class="sidemenu-title">
+            <a href="/pages/dashboard.html">
             <img src="/image/sideMenu1.png" alt="">
             <b>FURNITURE</b>
-            <img src="/image/sideMenu2.png" alt="">
+            <img src="/image/sideMenu2.png" alt="" class="side-menu-bar">
+            </a>
         </div>
         <div class="sidemenu-container">
             <div class="sidemenu-item">
-                <img src="/image/products.png" alt="">
-                <p>Products</p>
+                <a href="/pages/productList.html"><img src="/image/products.png" alt="">
+                    <p>Products</p>
+                </a>
             </div>
             <div class="sidemenu-item">
-                <img src="/image/customer.png" alt="">
-                <p>Customers</p>
+                <a href="/pages/customerList.html"><img src="/image/customer.png" alt="">
+                    <p>Customers</p>
+                </a>
             </div>
             <div class="sidemenu-item">
-                <img src="/image/order.png" alt="">
-                <p>Orders</p>
+                <a href="/pages/orderList.html"><img src="/image/order.png" alt="">
+                    <p>Orders</p>
+                </a>
             </div>
             <div class="sidemenu-item">
-                <img src="/image/staff.png" alt="">
+                <a href="/pages/staffList.html"><img src="/image/staff.png" alt="">
                 <p>Staff List</p>
+                </a>
             </div>
             <div class="sidemenu-item">
-                <img src="/image/report.png" alt="">
-                <p>Reports</p>
+                <a href="#">
+                    <img src="/image/report.png" alt="">
+                    <p>Reports</p>
+                </a>
+               
             </div>
            
         </div>
         <div class="sidemenu-container">
             <div class="sidemenu-item">
+                <a href="">
                 <img src="/image/setting.png" alt="">
                 <p>Settings</p>
+                </a>
+                
             </div>
             <div class="sidemenu-item">
-                <img src="/image/logout.png" alt="">
-                <p>Logout</p>
+                <a href="/login.html">
+                    <img src="/image/logout.png" alt="">
+                    <p>Logout</p>
+                </a>
             </div>
             
         
@@ -100,21 +117,20 @@
                 </div>
             </div>
             <div class="bar-graph">
+                <div class="totalRevenue">
+                    <h3>Total Revenue</h3>
+                    <div class="profitLoss">
+                        <div><p class="dot dot-profit"> </p><span>profit</span></div>
+                        <div><p class="dot dot-loss"> </p><span>loss</span></div>
+                    </div>
+                </div>
+                <h2>$50.4K <span> &uarr; 5% than last month</span></h2>
                 <div id="column-example-14">
                     <!-- <table class="charts-css column show-labels multiple show-primary-axis show-data-axes data-spacing-5 datasets-spacing-4"> -->
                     <table class="charts-css column show-labels  show-primary-axis  data-spacing-5 datasets-spacing-4">
                         <caption> Column Example #14 </caption>
                 
-                        <!--     <thead>
-                                      <tr>
-                                      <th scope="col"> Year </th> 
-                                      <th scope="col"> Progress 1</th> 
-                                        <th scope="col"> Progress 2</th> 
-                                        <th scope="col"> Progress 3</th> 
-                                        <th scope="col"> Progress 4</th> 
-                                        <th scope="col"> Progress 5</th>
-                                       </tr>
-                                      </thead>  -->
+                    
                         <tbody>
                             <tr>
                                 <th scope="row"> Jan </th>
@@ -171,12 +187,190 @@
                     </table>
                 </div>
             </div>
-            <div class="line">
-                line
+            <div class="progressBar">
+                <h1>Most Sold Items</h1>
+                <div >
+                    <div class="label">
+                        <p>Bed</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="line-wrapper">
+                        <div class="line bed"></div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="label">
+                        <p>Sofa</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="line-wrapper">
+                        <div class="line sofa"></div>
+                    </div>
+                
+                </div>
+                <div>
+                    <div class="label">
+                        <p>Lamp</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="line-wrapper">
+                        <div class="line lamp"></div>
+                    </div>
+                
+                </div>
+                <div>
+                    <div class="label">
+                        <p>Cabinet</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="line-wrapper">
+                        <div class="line cabinet"></div>
+                    </div>
+                
+                </div>
+                <div>
+                    <div class="label">
+                        <p>Others</p>
+                        <p>20%</p>
+                    </div>
+                    <div class="line-wrapper">
+                        <div class="line others"></div>
+                    </div>
+                
+                </div>
             </div>
+           
         </section>
+        <div class="staffList">
+            <div class="staffListTitle">
+                <p>Latest Orders</p>
+              
+            </div>
+            <div class="staffListTable">
+                <div class="order-row staffListHeader">
+                    <div><input type="checkbox"></div>
+                    <div>Product Name</div>
+                    <div>Order ID</div>
+                    <div>Date</div>
+                    <div>Customer Name</div>
+                    <div>Status</div>
+                    <div>Amount</div>
+                    <div>Action</div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-deliver"></span> Delivered
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-pending"></span> Pending
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-pending"></span> Pending
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-deliver"></span> Delivered
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-pending"></span> Pending
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-cancel"></span> Canceled
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+                <div class="order-row ">
+                    <div><input type="checkbox"></div>
+                    <div>Morden Sofa</div>
+                    <div>EE72823</div>
+                    <div>2023 Nov 22</div>
+                    <div>Sofia Mia</div>
+                    <div>
+                        <span class="dot dot-deliver"></span> Delivered
+                    </div>
+                    <div>250.000 MMK</div>
+                    <div>
+                        <img src="/image/edit.svg" alt="">
+                        <img src="/image/trashbin.svg" alt="">
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        </div>
     </div>
    
    </section>
+   <script src="/js/style.js"></script>
 </body>
 </html>

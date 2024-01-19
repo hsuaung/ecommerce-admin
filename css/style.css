@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
 *{
     padding:0;
     margin:0;
@@ -6,12 +8,19 @@
 body{
     background-color: #383854;
     color: #FFFFFF;
+    font-family: "Exo 2";
 }
 .main{
     display:grid;
     grid-template-columns: 15% 85%;
     width:90%;
-    gap:5%;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    margin: auto;
+    /* margin:1rem rem; */
+    gap:2%;
     /* background-color: yellow; */
 }
 .sidemenu{
@@ -23,11 +32,23 @@ body{
     align-items: center;
     width:100%;
     padding:15px;
+    margin: 1rem;
+    border-radius:5px;
 }
-.sidemenu-title{
+/* .sidemenu.move {
+    width:  100px;;
+    
+} */
+/* .sidemenu-item >p{
+    display:none;
+} */
+
+.sidemenu-title a{
     display:flex;
     align-items: center;
     gap:1%;
+    text-decoration: none;
+    color:#ffffff;
    
 }
 .sidemenu-container ,.sidemenu-exit{
@@ -37,16 +58,22 @@ body{
     margin-top:3rem;
 
 }
-.sidemenu-item
+.sidemenu-item a
 {
     display:flex;
     gap:10%;
+    color: #ffffff;
+    text-decoration: none;
+}
+.sidemenu-item a{
+    
 }
 .right{
     display:flex;
     flex-direction: column;
     gap:1rem;
     padding-top: 1rem;
+    padding-bottom: 5rem;
 }
 .topnav{
     background-color: #2E2E48;
